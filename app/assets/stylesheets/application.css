@@ -1,31 +1,53 @@
 body {
-  background-color: black;
+  background-color: #a49a9d;
 }
 
-title , h1 {
+h1 , h2, h3 {
   font-family: "Lucida Console", "Lucida Sans Typewriter", monospace;
   text-align: center;
 }
 
-title {
-  font-size: 2em;
-}
-
 h1 {
+  font-size: 3em;
+  color: white;
+  margin-top: 3%;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  color: white;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+h3, h4, p {
+  color: black;
   font-size: 1em;
+  margin-top: 10%;
 }
 
-table {
-  background-image: url(asset_path('Whitetablecaffeine.jpg'));
-  align: center:
-  height: 40%;
-  width: 40%;
+.img-responsive {
+  height: 400px;
+  width: 500px;
+  display: inline-block;
+  margin: 0px 5px;
+  float:left;
 }
 
-.myScore, .compScore {
+section {
   background-color: white;
   border-radius: 25%;
-  height: 40%;
-  width: 15%;
+  height: 300px;
+  width: 200px;
+  display:inline-block;
+  margin: 35px 35px;
+  float:left;
+}
 
+#row{
+  margin-left: 190px;
 }

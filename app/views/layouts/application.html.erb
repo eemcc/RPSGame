@@ -17,16 +17,31 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <% compScore=0 %>
+  <% myScore=0 %>
+
+  <% human= gets.chomp.downcase %>
+  <% computer= ["rock", "paper", "scissors"].sample %>
+
   <body>
 
-    <title> Rock, Paper, Scissors </title>
-    <h1>Lets Play!</h1>
-    <div class = myScore>
-    </div> <!--myScore-->
-    <div class = table>
-    </div> <!--table-->
-    <div class = compScore>
-    </div> <!--compScore-->
+    <h1> Rock, Paper, Scissors </h1>
+    <h2>Lets Play!</h2>
+
+    <div id=row>
+      <section class: myScore >
+        <h4>Choose Rock, Paper or Scissors</h4>
+        <button type = "Play"> Play! </button>
+        <h3>Your Score</h3>
+        <p><%="#{myScore}"%></p>
+      </section> <!--myScore-->
+      <%= image_tag("Whitetablecaffeine", class: "img-responsive") %>
+      <section class: compScore>
+        <h4><%="#{computer}"%></h4>
+        <h3>Computer's Score</h3>
+        <p><%="#{compScore}"%></p>
+      </section> <!--compScore-->
+    </div> <!--row-->
 
     <%= yield %>
   </body>
